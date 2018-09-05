@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <form method="post" action="/post_user">
+      <input id="username" name="username" type="text">
+      <input id="email" name="email" type="text">
+      <input type="submit">
+    </form>
+
+    {% for user in myUser %}
+      {{user.username}}
+      {{user.email}}
+    {% endfor %}
+  </body>
+</html>
